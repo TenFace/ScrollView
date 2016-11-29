@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/li"
+    android:background="@drawable/list_item"
+    android:layout_height="120dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/resImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:padding="2dp"
+            android:src="@drawable/home_item_head" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/resName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.84"
+                    android:gravity="bottom"
+                    android:text="重庆人家"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/wei_promote_background"
+                    android:text="微派送"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                    <RatingBar
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:numStars="5"
+                        android:layout_marginTop="11dp"
+                        android:progressDrawable="@drawable/waimai_shopdetail_item_icon_star_full"
+                        android:rating="3.5" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="月售16728份"
+                    android:textColor="#aaff2d4b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/Restype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="3dp"
+                    android:text="类型:午餐"
+                    android:textColor="#ff2d4b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="top"
+                    android:text="起送 ¥ 20|配送 ¥ 8"
+                    android:textColor="#aaff2d4b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ResAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.46"
+                    android:gravity="top|right"
+                    android:paddingRight="3dp"
+                    android:text="位置:交大店"
+                    android:textColor="#ff2d4b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.08dp"
+        android:background="#11000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/first"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="新用户1分钱活动,特价菜品,半价套餐等你抢"
+            android:textColor="#aaff2d4b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/jian"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="在线支付满100立减20元；满150立减50元"
+            android:textColor="#aaff2d4b"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

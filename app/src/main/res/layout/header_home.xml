@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff2d4b" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:padding="5dp"
+        android:text="河南大学"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/chooseSchool_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/tv_title"
+        android:scaleType="center"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_toLeftOf="@id/tv_title"
+        android:scaleType="centerInside"
+        android:src="@drawable/address" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/tv_title"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:visibility="visible"
+    android:paddingBottom="15dp"
+    >
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="爱的搜索"
+        android:textColorHint="#44000000"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/search2"
+        android:padding="6dp"
+        android:drawablePadding="5dp"
+        android:background="@drawable/edit_bg"
+        
+        />
+</LinearLayout>
+</RelativeLayout>
